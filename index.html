@@ -3,102 +3,208 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NextGen Marketing | Revenue Architect</title>
 
-<title>NextGen Marketing | Revenue Systems Architect</title>
-<meta name="description" content="Investor Funnel Architect & CRM ERP Specialist. We build revenue systems, not just ads.">
-
-<!-- Open Graph -->
-<meta property="og:title" content="NextGen Marketing - Revenue Systems Architect">
-<meta property="og:description" content="Investor Funnels, CRM & ERP Automation, High-Ticket Revenue Systems">
-<meta property="og:type" content="website">
-
-<!-- Schema Markup -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Person",
- "name": "Asraful Islam",
- "jobTitle": "Investor Funnel Architect",
- "worksFor": {
-   "@type": "Organization",
-   "name": "NextGen Marketing"
- }
-}
-</script>
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://kit.fontawesome.com/4e8b1b7c3d.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
-<header class="hero">
-  <h1>We Build Revenue Systems. Not Just Ads.</h1>
-  <p>Investor Funnels, Custom CRM & ERP Automation, Real Estate & Furniture Brand Scaling.</p>
-  <div class="hero-buttons">
-    <a href="#contact" class="btn-primary">Book Strategy Call</a>
-    <a href="#portfolio" class="btn-secondary">Explore Revenue Systems</a>
+<!-- HEADER -->
+<header class="header">
+  <div class="container nav">
+    <div class="logo">
+      <img src="logo.png" alt="NextGen Logo">
+      <span>NextGen Marketing</span>
+    </div>
+
+    <ul class="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="#contact" class="btn-primary">Strategy Call</a>
   </div>
 </header>
 
-<section class="stats">
-  <div class="counter" data-target="12">0</div>
-  <p>Years Experience</p>
-
-  <div class="counter" data-target="5000">0</div>
-  <p>Qualified Leads Generated</p>
-
-  <div class="counter" data-target="50">0</div>
-  <p>Business Systems Built</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Architecting Revenue Infrastructure for <span>High-Ticket Growth</span></h1>
+    <p>Investor funnels, CRM systems and enterprise automation engineered for serious scaling companies.</p>
+    <a href="#contact" class="btn-primary">Request Architecture Review</a>
+  </div>
 </section>
 
-<section id="portfolio">
-<h2>Revenue Systems Portfolio</h2>
+<!-- SERVICES -->
+<section id="services" class="services">
+  <div class="container">
+    <h2>Our Core Services</h2>
+    <div class="service-grid">
 
-<div class="case-card">
-<h3>Real Estate Share Funnel</h3>
-<p>Investor-focused funnel generating multi-crore pipeline.</p>
-<button onclick="openModal('estate')">View Details</button>
-</div>
+      <div class="card">
+        <i class="fab fa-facebook-f"></i>
+        <h3>Meta Advertising</h3>
+        <p>Data-driven Facebook & Instagram ads built for ROI and investor-grade scaling.</p>
+      </div>
 
+      <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Google Ads</h3>
+        <p>High intent acquisition systems targeting serious buyers globally.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-cogs"></i>
+        <h3>CRM Automation</h3>
+        <p>Custom pipeline, lead scoring and automation architecture.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-code"></i>
+        <h3>Web & Funnel Systems</h3>
+        <p>Conversion optimized landing pages engineered for authority.</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<section id="services">
-<h2>Enterprise Growth Services</h2>
-<ul>
-<li>Meta Ads Management</li>
-<li>TikTok Ads Scaling</li>
-<li>CRM Development</li>
-<li>ERP Architecture</li>
-<li>WhatsApp API Automation</li>
-</ul>
+<!-- ANALYTICS -->
+<section id="analytics" class="analytics">
+  <div class="container">
+    <h2>Campaign Performance Overview</h2>
+    <canvas id="campaignChart"></canvas>
+  </div>
 </section>
 
-<section id="contact">
-<h2>Book Strategy Call</h2>
+<!-- CLIENTS SECTION -->
+<!-- OUR HONORABLE CLIENTS -->
+<section class="clients">
+  <div class="container">
+    <h2 class="section-title">Our Honorable Clients</h2>
 
-<form id="leadForm">
-<input type="text" name="name" placeholder="Full Name" required>
-<input type="tel" name="phone" placeholder="Phone" required>
-<input type="email" name="email" placeholder="Email" required>
-<select name="business">
-<option>Real Estate</option>
-<option>Furniture</option>
-<option>Other</option>
-</select>
-<input type="number" name="budget" placeholder="Monthly Ad Budget">
-<textarea name="message" placeholder="Your Growth Goal"></textarea>
-<button type="submit">Submit</button>
-</form>
+    <div class="clients-grid">
 
-<div id="formMessage"></div>
+      <div class="client-item">
+        <img src="assets/logos/divine-group.png" alt="Divine Group">
+      </div>
 
+      <div class="client-item">
+        <img src="assets/logos/cox-holiday-inn.png" alt="Cox Holiday Inn">
+      </div>
+
+      <div class="client-item">
+        <img src="assets/logos/best-furnishing.png" alt="Best Furnishing">
+      </div>
+
+      <div class="client-item">
+        <img src="assets/logos/jr-furniture.png" alt="JR Furniture">
+      </div>
+
+      <div class="client-item">
+        <img src="assets/logos/mashrafi.png" alt="Mashrafi Furniture">
+      </div>
+
+      <div class="client-item">
+        <img src="assets/logos/hatil.png" alt="Hatil">
+      </div>
+
+      <div class="client-item">
+        <img src="assets/logos/chutiresort.png" alt="Chuti Resort">
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<footer>
-<p>Founder: Asraful Islam</p>
-<p>WhatsApp: 01637675239</p>
-<p>© 2026 NextGen Marketing</p>
+<!-- CTA STRIP -->
+<section class="cta">
+  <div class="container cta-flex">
+    <h3>Still Need Strategic Growth Support?</h3>
+    <a href="#contact" class="btn-secondary">Schedule Consultation</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Request Strategy Consultation</h2>
+    <form id="leadForm">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Work Email" required>
+      <input type="text" name="business" placeholder="Industry">
+      <textarea name="message" placeholder="Describe your growth objective"></textarea>
+      <button type="submit" class="btn-primary">Submit Consultation Request</button>
+    </form>
+    <div id="formMessage"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<!-- PREMIUM FOOTER -->
+<footer class="premium-footer">
+
+  <!-- CTA STRIP -->
+  <div class="footer-cta">
+    <div class="container footer-cta-flex">
+      <h3>Still Need Strategic Growth Support?</h3>
+      <a href="#contact" class="footer-cta-btn">Schedule Strategy Call</a>
+    </div>
+  </div>
+
+  <div class="container footer-main">
+
+    <div class="footer-col footer-brand">
+      <img src="logo.png" class="footer-logo">
+      <p>
+        NextGen Marketing is a revenue infrastructure agency focused on
+        investor funnels, CRM automation and global scaling systems.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li>Meta Advertising</li>
+        <li>Google Ads</li>
+        <li>CRM Automation</li>
+        <li>Landing Systems</li>
+        <li>Performance Analytics</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Useful Links</h4>
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Case Studies</li>
+        <li>Privacy Policy</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-envelope"></i> info@nextgenmarketing.com</p>
+      <p><i class="fab fa-whatsapp"></i> +8801637675239</p>
+      <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/asraful-islam-84ba64375/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/asraful.islam.550699" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 NextGen Marketing. All rights reserved.
+  </div>
+
 </footer>
-
-<script src="script.js"></script>
-</body>
-</html>

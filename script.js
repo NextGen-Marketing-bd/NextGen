@@ -1,34 +1,28 @@
-// Animated Counters
-const counters = document.querySelectorAll('.counter');
+// Chart.js Campaign Graph
 
-counters.forEach(counter => {
-const update = () => {
-const target = +counter.getAttribute('data-target');
-const count = +counter.innerText;
-const increment = target / 200;
+const ctx = document.getElementById('campaignChart');
 
-if(count < target){
-counter.innerText = Math.ceil(count + increment);
-setTimeout(update,10);
-} else {
-counter.innerText = target;
-}
-};
-update();
-});
-
-// Form Submission
-document.getElementById("leadForm").addEventListener("submit",function(e){
-e.preventDefault();
-
-fetch("https://script.google.com/macros/s/AKfycbz7mrlYDoafX3WUZxoUFZDqnXsq6dpARKaQUV-iBQzMMeG3xwIvvEVI0w0FCC7IwLsW/exec",{
-method:"POST",
-body: JSON.stringify(Object.fromEntries(new FormData(this)))
-})
-.then(res=>res.json())
-.then(data=>{
-document.getElementById("formMessage").innerText="Submitted Successfully!";
-this.reset();
-})
-.catch(()=> document.getElementById("formMessage").innerText="Error occurred");
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Apr 22','Apr 23','Apr 24','Apr 25','Apr 26','Apr 27'],
+    datasets: [
+      {
+        label: 'Ad Spend',
+        data: [250,300,280,350,400,420],
+        backgroundColor: '#00C2FF'
+      },
+      {
+        label: 'Revenue',
+        data: [800,900,850,1200,1500,1700],
+        backgroundColor: '#122B40'
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'top' }
+    }
+  }
 });

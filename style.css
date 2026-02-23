@@ -1,0 +1,62 @@
+body {
+margin:0;
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#0f2027,#2c5364,#1c1c3c);
+color:#fff;
+scroll-behavior:smooth;
+}
+
+.hero {
+text-align:center;
+padding:120px 20px;
+background: rgba(255,255,255,0.05);
+backdrop-filter: blur(15px);
+}
+
+.btn-primary {
+background: linear-gradient(45deg,#00ffff,#a020f0);
+padding:12px 25px;
+color:#000;
+border-radius:30px;
+text-decoration:none;
+}
+
+.stats {
+display:flex;
+justify-content:center;
+gap:40px;
+padding:60px;
+}
+
+.counter {
+font-size:40px;
+font-weight:bold;
+}
+
+.case-card {
+background: rgba(255,255,255,0.05);
+padding:20px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.case-card:hover {
+transform: translateY(-8px);
+}
+
+form input, form textarea, form select {
+display:block;
+width:100%;
+margin:10px 0;
+padding:12px;
+border-radius:10px;
+border:none;
+}
+
+button {
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:linear-gradient(45deg,#00ffff,#ff00ff);
+cursor:pointer;
+}
